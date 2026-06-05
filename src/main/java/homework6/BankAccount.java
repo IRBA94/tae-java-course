@@ -15,7 +15,7 @@ public class BankAccount {
         if (amount > 0) {balance += amount;}
     }
 
-    //withdraw დანიშნულება არ ჩანს დავალებაში.
+
     public void withdraw(double amount){
         if (amount > balance){
             System.out.println("არასაკმარისი თანხა");
@@ -30,6 +30,7 @@ public class BankAccount {
     public static void main(String[] args) {
         BankAccount acc = new BankAccount("ირაკლი", 100);
         acc.deposit(50);
+        acc.withdraw(200);
         System.out.println(acc.getBalance());
 
     }
