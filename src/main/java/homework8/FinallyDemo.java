@@ -19,9 +19,10 @@ public class FinallyDemo {
     }
 
     public static void main(String[] args) {
-        readNumber("100");
+
+        System.out.println(readNumber("100"));
         System.out.println("\n");
-        readNumber("xyz");
+        System.out.println(readNumber("xyz"));
 
     }
 }
